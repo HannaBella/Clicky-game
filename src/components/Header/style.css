@@ -2,6 +2,12 @@ nav {
     background: rgb(250, 159, 94);
     
   }
-nav h3{
+.navBrand{
+  font-size: 40px;
   font-weight: 400;
+
+  }
+.nav-item {
+  font-size: 20px;
+  font-weight: 200;
 }
