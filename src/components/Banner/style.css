@@ -1,0 +1,8 @@
+.jumbotron {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#banner_logo {
+    max-width: 15vh;
+}

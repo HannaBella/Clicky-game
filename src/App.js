@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
 import friends from "./friends.json";
 import Header from "./components/Header";
+import Banner from "./components/Banner";
 
 
 function shuffle(images) {
@@ -53,6 +54,7 @@ class App extends Component {
         <Header score={this.state.score}
           topScore={this.state.topScore}
         />
+        <Banner />
         <Wrapper>
           {this.state.friends.map(friend => (
             <FriendCard
