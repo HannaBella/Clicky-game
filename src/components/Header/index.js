@@ -8,7 +8,7 @@ function Header(props){
             <div className="container">
             <ul className="navbar sticky-top text-white nav nav-fill"> 
                 <li className="navBrand">Clicky Game</li>
-                <li className="nav-item ml-5">Click an image to begin! {props.bannerMessage}</li>
+                <li className="nav-item ml-5">{props.statusMessage}</li>
                 <li className="nav-item">Score: {props.score}</li>
                 <li className="nav-item">Top Score: {props.topScore}</li>
             </ul> 

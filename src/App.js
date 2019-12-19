@@ -19,6 +19,7 @@ class App extends Component {
     friends,
     score: 0,
     topScore : 0,
+    statusMessage: "Click an image to begin!",
     ids : []
   };
   
@@ -29,7 +30,11 @@ class App extends Component {
 
     if(ids.indexOf(id) === -1){
       ids.push(id);
-      this.setState({ score: this.state.score + 1 });
+      this.setState({ 
+        score: this.state.score + 1,
+        statusMessage: "Correct!" 
+
+      });
       this.makeShuffle();
 
       if(score + 1 >= topScore){
@@ -38,6 +43,7 @@ class App extends Component {
     } else{
       this.setState({ score: 0 });
       this.setState({ ids: [] });
+      this.setState({ statusMessage: "Incorrect!"});
       this.makeShuffle();
     }
     
@@ -50,7 +56,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header score={this.state.score}
+        <Header 
+          statusMessage={this.state.statusMessage}
+          score={this.state.score}
           topScore={this.state.topScore}
         />
         <Wrapper>
