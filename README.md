@@ -5,5 +5,8 @@ Clicky game is a memory game that tracks user score and update it. When the user
 
 It is build with React.Js and bootstrap.
 
+### Clicky Game APP Demo
+<img src="https://github.com/HannaBella/clicky-game/blob/master/public/images/ClickyGame.png">
+
 ### Author 
 Hanna Tefera
