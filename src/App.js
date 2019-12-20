@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import friends from "./friends.json";
 import Header from "./components/Header";
 
-
 function shuffle(images) {
   for (let i = images.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -33,7 +32,6 @@ class App extends Component {
       this.setState({ 
         score: this.state.score + 1,
         statusMessage: "Correct!" 
-
       });
       this.makeShuffle();
 
@@ -41,12 +39,13 @@ class App extends Component {
         this.setState({ topScore: this.state.score + 1 });
       }
     } else{
-      this.setState({ score: 0 });
-      this.setState({ ids: [] });
-      this.setState({ statusMessage: "Incorrect!"});
+      this.setState({ 
+        score: 0,
+        ids: [], 
+        statusMessage: "Incorrect!"
+      });
       this.makeShuffle();
-    }
-    
+    } 
   };
 
   makeShuffle = () => {
@@ -64,15 +63,12 @@ class App extends Component {
         <Wrapper>
           {this.state.friends.map(friend => (
             <FriendCard
-              
               id={friend.id}
               key={friend.id}
-              
               image={friend.image}
               handleClick={this.handleClick}
             />
           ))}
-          
         </Wrapper>
       <Footer />
       </div>
