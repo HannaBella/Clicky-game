@@ -1,7 +1,7 @@
 
 # Clicky Game
 
-Clicky game is a memory game that tracks user score and update it. The score dashboard containes score, dynamic status message about each score and top score.
+Clicky game is a memory game that tracks user score and update it. The score dashboard shows score, dynamic status message about each score and top score.
 
 ### Game Rules
 * When the user click an image for the first time: 
